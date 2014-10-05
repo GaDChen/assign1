@@ -10,6 +10,7 @@ int h = 50;
 // declare variables
 // --------------------------------------------
 // put your code inside here
+
 int totalScore = 500;
 int times = 0;
 
