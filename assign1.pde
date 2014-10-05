@@ -10,7 +10,8 @@ int h = 50;
 // declare variables
 // --------------------------------------------
 // put your code inside here
-int totalScore = 0;
+int totalScore = 500;
+int times = 0;
 
 // --------------------------------------------
 
@@ -62,7 +63,24 @@ void draw() {
       // stop rolling
       // -------------------------------------------------
       // put your code inside here
-      
+      int fruitId0 = int(random(6));
+      int fruitId1 = int(random(6));
+      int fruitId2 = int(random(6));
+      int a = machine.getSlotScore(fruitId0);
+      int b = machine.getSlotScore(fruitId1);
+      int c = machine.getSlotScore(fruitId2);
+ 
+      machine.setSlotFruit(0,fruitId0);
+      machine.setSlotFruit(1,fruitId1);
+      machine.setSlotFruit(2,fruitId2);
+      int m = machine.getFruitCount(fruitId0);
+      int n = machine.getFruitCount(fruitId1);
+      int o = machine.getFruitCount(fruitId2);
+
+
+          println(times=times+1);
+          println(totalScore=500+a*m+b*n+c*o);
+          println(totalScore=totalScore-50*times);
  
  
  
